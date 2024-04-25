@@ -1,0 +1,6 @@
+clean
+mop
+sweep
+shower
+Shower2
+cry

@@ -1,0 +1,49 @@
+
+kjvkjjjk
+
+self.top_left_box_scroll = tk.Scrollbar(self.mid_mid)
+        self.top_left_box_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+        self.top_left_list_box = tk.Listbox(self.mid_mid, yscrollcommand=self.top_left_box_scroll.set)
+        self.top_left_list_box.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.top_left_box_scroll.config(command=self.top_left_list_box.yview)
+
+"""def add_to_do(entry_obj, list_obj):
+    todo_local = entry_obj.get()
+    list_obj.insert(tk.END, todo_local)
+    entry_obj.delete(0, tk.END)
+
+
+def add_to_do_w_key(event, list_obj):
+    todo_local = event.widget.get()
+    list_obj.insert(tk.END, todo_local)
+    event.widget.delete(0, tk.END)
+
+
+def edit_to_do(entry_obj, list_obj):
+
+    todo_edit_local = entry_obj.get()
+    print(type(todo_edit_local))
+    if todo_edit_local != "":
+        for item in list_obj.curselection():
+            list_obj.delete(item)
+            list_obj.insert(item, f"{todo_edit_local}")
+        entry_obj.delete(0, tk.END)
+    else:
+        messagebox.showwarning("showwarning", "Please, Enter Replacement Item in Text Box!")
+
+
+def delete_to_do(list_obj):
+    for item in list_obj.curselection():
+        list_obj.delete(item)
+
+
+def load_todos(list_box_obj):
+    todo_list_local = get_todos()
+    for todo in todo_list_local:
+        list_box_obj.insert(tk.END, f"{todo}")
+
+
+def save_do_todo(window_local, list_box_obj):
+    write_todos(list(list_box_obj.get(0, tk.END)))
+    window_local.destroy()"""
+
