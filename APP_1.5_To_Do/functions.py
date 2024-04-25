@@ -1,4 +1,6 @@
-FILEPATH = "main.txt"
+FILEPATH = "./main.txt"
+
+
 def get_todos(file_path=FILEPATH):
     """ Reads To Do List """
     with open(file_path, "r") as file_local:
