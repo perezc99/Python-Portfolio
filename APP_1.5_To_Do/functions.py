@@ -1,3 +1,10 @@
+import path
+import sys
+
+
+dir = path.Path(__file__).abspath()
+sys.append.path(dir.parent.parent)
+
 FILEPATH = "./main.txt"
 
 
